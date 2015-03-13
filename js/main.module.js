@@ -1,0 +1,2 @@
+angular
+	.module('board', ['ngRoute'])
