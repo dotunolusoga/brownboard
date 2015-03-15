@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Brown Board</title>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/skeleton/css/normalize.css">
     <link rel="stylesheet" href="bower_components/skeleton/css/skeleton.css">
     <link rel="stylesheet" href="css/main.css">
@@ -35,8 +36,9 @@
       <h1>Brown Board</h1>
       <div ng-app="board" ng-controller="ArticleTableCtrl as table">
 
-      <div ng-include="'js/articles/table.html'"></div>
-
+      <div ng-view></div>
+<!--       <div ng-include="'js/articles/form.html'"></div>
+ -->
       </div>
 
     </div>
@@ -46,6 +48,9 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="js/main.module.js"></script>
+    <script src="js/main.config.js"></script>
+    <script src="js/main.filters.js"></script>
     <script src="js/articles/table.controller.js"></script>
+    <script src="js/articles/new.controller.js"></script>
   </body>
 </html>

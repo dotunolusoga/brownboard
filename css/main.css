@@ -1,0 +1,31 @@
+.imageContainer {
+	width: 100px;
+}
+
+.table--updown span, .table--updown i {
+	display: block;
+	text-align: center;
+}
+.table--updown i:last-child:hover {
+	color: tomato;
+	transition: 0.5s linear;
+}
+
+.table--updown i:first-child:hover {
+	color: green;
+	transition: 0.5s linear;
+}
+
+.table--updown i {
+	color: lightgray;
+}
+
+.up i:first-child {
+	font-weight: bold;
+	color: green;
+}
+
+.down i:last-child {
+	font-weight: bold;
+	color: tomato;
+}
